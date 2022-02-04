@@ -8,7 +8,9 @@ export default class Astronaut {
     let presentAge = 0;
     if (this.planet === "Earth") {
       presentAge = this.age * 1
-    } 
+    } else if (this.planet === "Mercury") {
+      
+    }
     return presentAge;
   }
 
