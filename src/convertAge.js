@@ -26,11 +26,11 @@ export default class Astronaut {
     let expect = 77.8;
     let lordNotYetImTooYoungToDie = 0;
     if (this.planet === "Earth") {
-      lordNotYetImTooYoungToDie = expect - this.age;
-      return lordNotYetImTooYoungToDie;
+      lordNotYetImTooYoungToDie = (expect - this.age) / 1;
+      return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Mercury") {
       
-      return lordNotYetImTooYoungToDie;
+      return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     }
   }
 }
