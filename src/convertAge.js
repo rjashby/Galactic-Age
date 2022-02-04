@@ -55,7 +55,10 @@ export default class Astronaut {
       } else if (this.planet === "Venus") {
         lordNotYetImTooYoungToDie = "Congratulations! You've out-kicked your coverage age by " + (parseFloat((expect / 0.62) * -1).toFixed(2)) + " years!";
         return lordNotYetImTooYoungToDie;
-      }    
+      } else if (this.planet === "Mars") {
+        lordNotYetImTooYoungToDie = "Congratulations! You've out-kicked your coverage age by " + (parseFloat((expect / 1.88) * -1).toFixed(2)) + " years!";
+        return lordNotYetImTooYoungToDie;
+      }
     }
   }
 }
