@@ -13,6 +13,9 @@ $(document).ready(function() {
     window.scrollTo(0,document.body.scrollHeight);
     astronaut.whereFrom();
     astronaut.howMuchLeft();
+    $("#outPlanet").text(planet);
+    $("#outAge").html(astronaut.whereFrom());
+    $("#leftPos").html(astronaut.howMuchLeft());
     return astronaut;
-  })
-})
+  });
+});

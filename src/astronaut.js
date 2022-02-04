@@ -7,7 +7,7 @@ export default class Astronaut {
   whereFrom () {
     let presentAge = 0;
     if (this.planet === "Earth") {
-      presentAge = this.age * 1
+      presentAge = this.age * 1;
     } else if (this.planet === "Mercury") {
       presentAge = this.age / 0.24;
     } else if (this.planet === "Venus") {
@@ -47,7 +47,7 @@ export default class Astronaut {
     let lordNotYetImTooYoungToDie = 0;
     if (Math.sign(expect) === -1) {
       if (this.planet === "Earth") {
-      lordNotYetImTooYoungToDie = "Congratulations! You've out-kicked your coverage age by " + (parseFloat((expect / 1) * -1).toFixed(2)) + " years!";
+        lordNotYetImTooYoungToDie = "Congratulations! You've out-kicked your coverage age by " + (parseFloat((expect / 1) * -1).toFixed(2)) + " years!";
       } else if (this.planet === "Mercury") {
         lordNotYetImTooYoungToDie = "Congratulations! You've out-kicked your coverage age by " + (parseFloat((expect / 0.24) * -1).toFixed(2)) + " years!";
 
