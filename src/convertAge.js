@@ -27,21 +27,17 @@ export default class Astronaut {
     let lordNotYetImTooYoungToDie = 0;
     if (this.planet === "Earth") {
       lordNotYetImTooYoungToDie = expect / 1;
-      return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Mercury") {
       lordNotYetImTooYoungToDie = expect / 0.24;
-      return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Venus") {
       lordNotYetImTooYoungToDie = expect / 0.62;
-      return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Mars") {
       lordNotYetImTooYoungToDie = expect / 1.88;
-      return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Jupiter") {
       lordNotYetImTooYoungToDie = expect / 11.86;
-      return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else {
-      
+      return "Choose a Planet";
     }
+    return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
   }
 }
