@@ -15,25 +15,25 @@ describe("Astronaut", () => {
     expect(astronaut.whereFrom()).toEqual(34);
   });
 
-  test("should create a prototype method for determining a user's age based on the value 'Mercury' for the planet property", () => {
+  test("should build upon the prototype method for determining a user's age based on the value 'Mercury' for the planet property", () => {
     const astronaut = new Astronaut(34, "Mercury"); 
     expect(astronaut.planet).toEqual("Mercury");
     expect(astronaut.whereFrom()).toEqual(141.67);
   });
 
-  test("should create a prototype method for determining a user's age based on the value 'Venus' for the planet property", () => {
+  test("should build upon the prototype method for determining a user's age based on the value 'Venus' for the planet property", () => {
     const astronaut = new Astronaut(34, "Venus"); 
     expect(astronaut.planet).toEqual("Venus");
     expect(astronaut.whereFrom()).toEqual(54.84);
   });
 
-  test("should create a prototype method for determining a user's age based on the value 'Mars' for the planet property", () => {
+  test("should build upon the prototype method for determining a user's age based on the value 'Mars' for the planet property", () => {
     const astronaut = new Astronaut(34, "Mars"); 
     expect(astronaut.planet).toEqual("Mars");
     expect(astronaut.whereFrom()).toEqual(18.09);
   });
 
-  test("should create a prototype method for determining a user's age based on the value 'Jupiter' for the planet property", () => {
+  test("should build upon the prototype method for determining a user's age based on the value 'Jupiter' for the planet property", () => {
     const astronaut = new Astronaut(34, "Jupiter"); 
     expect(astronaut.planet).toEqual("Jupiter");
     expect(astronaut.whereFrom()).toEqual(2.87);
