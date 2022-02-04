@@ -32,7 +32,7 @@ export default class Astronaut {
       lordNotYetImTooYoungToDie = (expect - this.age) / 0.24;
       return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Venus") {
-
+      lordNotYetImTooYoungToDie = (expect - this.age) / 0.62;
       return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     }
   }
