@@ -31,6 +31,9 @@ export default class Astronaut {
     } else if (this.planet === "Mercury") {
       lordNotYetImTooYoungToDie = (expect - this.age) / 0.24;
       return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
+    } else if (this.planet === "Venus") {
+
+      return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     }
   }
 }
