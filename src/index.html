@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
+  <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+  <title>Galactic Age</title>
 </head>
 <body>
   <div class="container">
@@ -16,8 +18,7 @@
       </div>
       <div class="form-group">
         <h4>Pick a Planet</h4>
-        <select id="planet" class="form-control">
-          <option value="">Select A Planet</option readonly>
+        <select id="planet">
           <option value="Earth">Earth</option>
           <option value="Mercury">Mercury</option>
           <option value="Venus">Venus</option>
@@ -31,7 +32,7 @@
     <div class="results">
       <p>If you lived on planet <span id="outPlanet"></span>, you would be <span id="outAge"></span> years old.</p>
       <p id="positive">And, not to be morbid or anything, but you would have <span id="leftPos"></span> years left to live on said planet.</p>
-      <p id="negative">And hey... <span id="leftPos"></span> Good on ya!</p>
+      <p id="negative"><span id="leftNeg"></span> Good on ya!</p>
     </div>
   </div>
 </body>
