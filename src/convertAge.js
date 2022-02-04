@@ -21,6 +21,11 @@ export default class Astronaut {
   }
 
   howMuchLeft () {
-
+    let expect = 77.8;
+    let lordNotYetImTooYoungToDie = 0;
+    if (this.planet === "Earth") {
+      lordNotYetImTooYoungToDie = expect - this.age;
+    }
+    return lordNotYetImTooYoungToDie;
   }
 }
