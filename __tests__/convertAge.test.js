@@ -62,4 +62,10 @@ describe("Astronaut", () => {
     expect(astronaut.planet).toEqual("Venus");
     expect(astronaut.howMuchLeft()).toEqual(70.65);
   });
+
+  test("should build upon the prototype method for determining a user's life expectancy based on the value 'Mars' for the planet property", () => {
+    const astronaut = new Astronaut(34, "Mars"); 
+    expect(astronaut.planet).toEqual("Mars");
+    expect(astronaut.howMuchLeft()).toEqual(23.30);
+  });
 })
