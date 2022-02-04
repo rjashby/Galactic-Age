@@ -86,4 +86,10 @@ describe("Astronaut", () => {
     expect(astronaut.planet).toEqual("Earth");
     expect(astronaut.outlive()).toEqual("Congratulations! You've out-kicked your coverage age by 5.20 years!");
   });
+
+  test("should update 'outlive' method based on Mercury", () => {
+    const astronaut = new Astronaut(83, "Mercury"); 
+    expect(astronaut.planet).toEqual("Mercury");
+    expect(astronaut.outlive()).toEqual("Congratulations! You've out-kicked your coverage age by 21.67 years!");
+  });
 })
