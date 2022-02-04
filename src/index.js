@@ -10,5 +10,9 @@ $(document).ready(function() {
     let age = parseInt($("input#age").val());
     let planet = $("select#planet option:selected").val();
     let astronaut = new Astronaut(age, planet);
+    window.scrollTo(0,document.body.scrollHeight);
+    astronaut.whereFrom();
+    astronaut.howMuchLeft();
+    return astronaut;
   })
 })
