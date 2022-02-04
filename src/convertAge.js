@@ -40,4 +40,8 @@ export default class Astronaut {
     }
     return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
   }
+
+  outlive () {
+
+  }
 }
