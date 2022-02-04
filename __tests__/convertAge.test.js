@@ -48,6 +48,6 @@ describe("Astronaut", () => {
   test("should build upon the prototype method for determining a user's life expectancy based on the value 'Mercury' for the planet property", () => {
     const astronaut = new Astronaut(34, "Mercury"); 
     expect(astronaut.planet).toEqual("Mercury");
-    expect(astronaut.howMuchLeft()).toEqual(63.87);
+    expect(astronaut.howMuchLeft()).toEqual(182.5);
   });
 })
