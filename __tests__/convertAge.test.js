@@ -81,7 +81,7 @@ describe("Astronaut", () => {
     expect(astronaut.howMuchLeft()).toEqual("Choose a Planet");
   });
 
-  test("should create a test function that returns the message 'Congratulations! You've out-kicked your coverage age by' plus a positive number of years if a user has outlived their life expectancy", () => {
+  test("should create an 'outlive' method that returns the message 'Congratulations! You've out-kicked your coverage age by' plus a positive number of years if a user has outlived their life expectancy", () => {
     const astronaut = new Astronaut(83, "Earth"); 
     expect(astronaut.planet).toEqual("Earth");
     expect(astronaut.outlive()).toEqual("Congratulations! You've out-kicked your coverage age by 5.20 years!");
