@@ -18,6 +18,9 @@ export default class Astronaut {
     } else if (this.planet === "Mars") {
       presentAge = this.age / 1.88;
       return parseFloat(presentAge.toFixed(2));
+    } else if (this.planet === "Jupiter") {
+      
+      return parseFloat(presentAge.toFixed(2));
     }
   }
 }
