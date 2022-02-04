@@ -26,4 +26,10 @@ describe("Astronaut", () => {
     expect(astronaut.planet).toEqual("Venus");
     expect(astronaut.whereFrom()).toEqual(54.84);
   });
+
+  test("should create a prototype method for determining a user's age based on the value 'Mars' for the planet property", () => {
+    const astronaut = new Astronaut(34, "Mars"); 
+    expect(astronaut.planet).toEqual("Mars");
+    expect(astronaut.whereFrom()).toEqual(18.09);
+  });
 })
