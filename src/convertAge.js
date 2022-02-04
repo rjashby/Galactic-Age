@@ -43,6 +43,13 @@ export default class Astronaut {
   }
 
   outlive () {
-    
+    let expect = 77.8 - this.age;
+    let lordNotYetImTooYoungToDie = 0;
+    if (Math.sign(expect) === -1) {
+      if (this.planet === "Earth") {
+      lordNotYetImTooYoungToDie = "Congratulations! You've out-kicked your coverage age by " + (parseFloat((expect / 1) * -1).toFixed(2)) + " years!";
+      }
+    return lordNotYetImTooYoungToDie;
+    }
   }
 }
