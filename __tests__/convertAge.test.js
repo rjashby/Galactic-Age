@@ -1,5 +1,5 @@
 import { TestWatcher } from "jest";
-import Astronaut from "../src/convertAge";
+import Astronaut from "../src/astronaut";
 
 describe("Astronaut", () => {
 
@@ -109,5 +109,11 @@ describe("Astronaut", () => {
     const astronaut = new Astronaut(83, "Jupiter"); 
     expect(astronaut.planet).toEqual("Jupiter");
     expect(astronaut.outlive()).toEqual("Congratulations! You've out-kicked your coverage age by 0.44 years!");
+  });
+
+  test("should return 'Choose a Planet' if no value selected for planet", () => {
+    const astronaut = new Astronaut(83, ""); 
+    expect(astronaut.planet).toEqual("");
+    expect(astronaut.outlive()).toEqual("Choose a Planet");
   });
 })
