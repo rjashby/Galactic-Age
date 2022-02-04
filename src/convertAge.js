@@ -23,23 +23,25 @@ export default class Astronaut {
   }
 
   howMuchLeft () {
-    let expect = 77.8;
+    let expect = 77.8 - this.age;
     let lordNotYetImTooYoungToDie = 0;
     if (this.planet === "Earth") {
-      lordNotYetImTooYoungToDie = (expect - this.age) / 1;
+      lordNotYetImTooYoungToDie = expect / 1;
       return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Mercury") {
-      lordNotYetImTooYoungToDie = (expect - this.age) / 0.24;
+      lordNotYetImTooYoungToDie = expect / 0.24;
       return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Venus") {
-      lordNotYetImTooYoungToDie = (expect - this.age) / 0.62;
+      lordNotYetImTooYoungToDie = expect / 0.62;
       return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Mars") {
-      lordNotYetImTooYoungToDie = (expect - this.age) / 1.88;
+      lordNotYetImTooYoungToDie = expect / 1.88;
       return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
     } else if (this.planet === "Jupiter") {
-      lordNotYetImTooYoungToDie = (expect - this.age) / 11.86;
+      lordNotYetImTooYoungToDie = expect / 11.86;
       return parseFloat(lordNotYetImTooYoungToDie.toFixed(2));
+    } else {
+      
     }
   }
 }

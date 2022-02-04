@@ -74,4 +74,10 @@ describe("Astronaut", () => {
     expect(astronaut.planet).toEqual("Jupiter");
     expect(astronaut.howMuchLeft()).toEqual(3.69);
   });
+
+  test("should return 'Choose a Planet' if no value selected for planet", () => {
+    const astronaut = new Astronaut(34, ""); 
+    expect(astronaut.planet).toEqual("");
+    expect(astronaut.howMuchLeft()).toEqual("Choose a Planet");
+  });
 })
