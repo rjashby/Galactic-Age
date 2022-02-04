@@ -19,4 +19,8 @@ export default class Astronaut {
     }
     return parseFloat(presentAge.toFixed(2));
   }
+
+  howMuchLeft () {
+
+  }
 }

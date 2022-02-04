@@ -38,4 +38,10 @@ describe("Astronaut", () => {
     expect(astronaut.planet).toEqual("Jupiter");
     expect(astronaut.whereFrom()).toEqual(2.87);
   });
+
+  test("should create a prototype method for determining a user's remaining life expectancy based upon the most recent CDC vital statistics and the value 'Earth' for the planet property", () => {
+    const astronaut = new Astronaut(34, "Earth"); 
+    expect(astronaut.planet).toEqual("Earth");
+    expect(astronaut.howMuchLeft()).toEqual(43.8);
+  });
 })
