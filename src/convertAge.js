@@ -19,7 +19,7 @@ export default class Astronaut {
       presentAge = this.age / 1.88;
       return parseFloat(presentAge.toFixed(2));
     } else if (this.planet === "Jupiter") {
-      
+      presentAge = this.age / 11.86;
       return parseFloat(presentAge.toFixed(2));
     }
   }
