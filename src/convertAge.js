@@ -16,6 +16,8 @@ export default class Astronaut {
       presentAge = this.age / 1.88;
     } else if (this.planet === "Jupiter") {
       presentAge = this.age / 11.86;
+    } else {
+      return "Choose a Planet";
     }
     return parseFloat(presentAge.toFixed(2));
   }
@@ -25,7 +27,10 @@ export default class Astronaut {
     let lordNotYetImTooYoungToDie = 0;
     if (this.planet === "Earth") {
       lordNotYetImTooYoungToDie = expect - this.age;
+      return lordNotYetImTooYoungToDie;
+    } else if (this.planet === "Mercury") {
+      
+      return lordNotYetImTooYoungToDie;
     }
-    return lordNotYetImTooYoungToDie;
   }
 }
