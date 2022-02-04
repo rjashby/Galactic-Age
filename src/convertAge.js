@@ -1,5 +1,6 @@
 export default class Astronaut {
-  constructor() {
-
+  constructor(age, planet) {
+    this.age = age;
+    this.planet = planet;
   }
 }
