@@ -1,13 +1,13 @@
 
-# _PROJECT NAME_ 
+# _Galactic Age Calculator_ 
 
 #### By _**Ryan Ashby**_ 
 
-#### _SHORT DESCRIPTION_
+#### _This application allows provides a person's given age and life expectancy on five planets in our solar system based upon user age and planet selection_
 
 ### _Link to GitHub Repository_
 
-* LINK
+* https://github.com/rjashby/Galactic-Age
 
 ## Technologies Used 
 
@@ -21,21 +21,32 @@
 * _Bootstrap_
 * _JavaScript_
 * _jQuery_
+* _Webpack_
+* _Jest_
+* _Babel_
+* _ES Lint_
 
 
 ## Description 
 
-_This application..._
+_This application asks a user to input their age, and planet of choice. Planetary choices include Earth, Mercury, Venus, Mars, and Jupiter._
+
+_The user submits the input via a form which populates an HTML div with the user's age on the given planet and life expectancy._
+
+_In the event that the user has already outlived their life expectancy, a congratulatory message will appear._
 
 ## Setup/Installation Requirements 
 
 **Cloning**
 
-1) _In order to utilize this page on your local machine, you will need to clone a copy of this repository using the "$ git clone {url}" command in your coding terminal._
-2) _Navigate to your desired directory in your command terminal and run "$ git clone LINK"_
+1) _In order to utilize this page on your local machine, you will need to clone a copy of this repository_
+
+2) _Navigate to your desired directory in your command terminal and run "$ git clone https://github.com/rjashby/Galactic-Age"_
+
 3) _Should you wish to edit the code you cloned, you will need coding software. VS Code is an example of a free code editor, which can be downloaded at https://code.visualstudio.com/_.
+
 4) _Once your coding software is installed, open the folder of the cloned repository, which will contain the HTML files, the bootstrap.css framework, any images, audio, as well separate individual stylesheets for each HTML file._
-5) _To view the finished site locally, simply navigate to the folder/directory which you cloned the project, and open the index.html file in your browser._
+
 
 **Downloading**
 
@@ -45,18 +56,6 @@ _This application..._
 
 3) _Follow the steps above to view, edit, and open the files as needed._
 
-
-**API Key and Private .env file**
-
-1) _To run this project, will need to sign up for an account at https://www.exchangerate-api.com/_ 
-
-2) _Continue to their sign-up page at https://app.exchangerate-api.com/sign-up. You can choose a plan that works for you, but they have a free plan that allows up to 1,500 API calls a month_
-
-3) _Add an PRIVATE .env file to your top most directory._
-
-4) _Save the API key provided after sign-up by typing the following in your .env following:_ API_KEY=INSERT YOUR API KEY HERE
-
-5) _Ensure that you have added .env to your .gitignore file BEFORE PROCEEDING_
 
 **Build the Environment and Run the Project** 
 
@@ -68,14 +67,13 @@ _This application..._
 
 4) _To run a server view of the project, you can type the command "npm start" to witness and inspect any changes you wish to make in real time._
 
-## Tests/Specs
+**Testing with Jest**
 
-#### Describe: 
+1) _Once you run "npm install", you can run test with Jest, a testing suite to ensure that code is working properly._
 
-*Test:* "It should..."
-*Code:* ;
-*Input:*
-*Expected Output:* 
+2) _Specific tests are written and can be found in the "tests" folder._
+
+3) _To test the code, simply run "npm test" in your terminal. Your terminal will show which tests are passing, which are failing, and the coverage of lines the tests encapsulate._
 
 ## Known Bugs 
 
